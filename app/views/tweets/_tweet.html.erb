@@ -1,0 +1,46 @@
+<div class = "row">
+    <div class = "small-8 medium-6 columns tweet">
+      <div class = "content clearfix">
+        <p class = "TweetTextSize TweetTextSize--20px js-tweet-text tweet-text" lang = "en" data-aria-label-part = "0">
+          <div class="user-name">
+            <%= user = User.name %>
+                <a href="#" class="button">Follow</a>
+          </div>
+            <br>
+              <span class="email">
+                <a href="mailto:someone@gmail.com?Subject=Hello%20again" target="_top">
+                  <%= current_user.email %>
+                </a>
+              </span>
+              <span class="created_at">
+                <%= tweet.created_at.strftime("%b %d, %Y") %>
+              </span>
+            <br>
+              <span class="content">
+                <%= tweet.content %>
+              </span>
+        </p>
+          <div class="img">
+            <img data-aria-label-part src = "http://www.relatably.com/m/img/why-so-serious-meme-cat/61360863.jpg">
+          </div>
+          </br >
+            <%= link_to(toggle_favorite_user_tweet_path(tweet.user, tweet), :remote => true, :method => "POST") do  %>
+              <i data-tweet-id="@tweet"></i>
+              <div class="favorites">
+              <% if @favorites.include?(tweet) %>  
+                <i class="fa fa-star fa-2x" aria-hidden="true" data-tweet-id="<%= tweet.id %>"></i>
+              <i data-tweet-id="@tweet"></i>
+              <% else %>
+                <i class="fa fa-star-o fa-2x" aria-hidden="true" data-tweet-id="<%= tweet.id %>"></i>
+              <% end %>
+              <% end %>
+            </div>
+              <br>
+                <span class="Favorite">
+                  <p>Favorites</p>
+                </span>
+            </div>  
+        </div>
+     </div>
+   </div>
+
