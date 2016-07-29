@@ -1,3 +1,4 @@
 <% @tweets.each do |tweet| %>
-<%= tweet.content %>
+   <%= render 'tweet', tweet: tweet %>
+
 <% end %>

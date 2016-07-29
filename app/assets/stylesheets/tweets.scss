@@ -1,3 +1,59 @@
 // Place all the styles related to the Tweets controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+div {
+  background-color: #ffffff;
+  width: 100%;
+}
+p {
+  padding-top:7px;
+  color: black;
+}
+body {
+  .tweet {
+    border: 5px solid gray;
+    border-radius: 7px;
+    border-width: 3px;
+    color: black;
+    font-family: Helvetica, sans-serif;
+   
+   .user-name {
+      font-size: 125%;
+      color: black;
+      font-weight: bold;
+      float: right;
+   }
+   .email {
+     font-size: 75%;
+     color: #808080;
+   }
+   .created_at {
+    font-size: 75%;
+    float: right;
+    color: #808080;
+   }
+   .content {
+    font-family: verdana;
+    font-size: 140%;
+    color: black;
+   }
+ }
+  .img {
+  width: 50%;
+  border-radius: 25px;
+  float: left;
+  padding-bottom: 10px;
+  top: -0px;
+  }
+  .favorites {
+ font-size: 50%;
+ display: inline-block;
+  }
+  .favorite {
+    font-size: 30%;
+  }
+ .class {
+  font-family: "Verdana", Times, serif;
+ }
+}
+

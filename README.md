@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # README
 
 This README would normally document whatever steps are necessary to get the
@@ -22,3 +23,7 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
+=======
+# twitterclone
+Created a simple twitter clone 
+>>>>>>> dd6ea64de3de28b17d0efb3e611a405f3bcf0d8b
